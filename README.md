@@ -48,6 +48,8 @@ But good examples (and even documentation) seem to be scarce. GitLab has a good 
 
 [GitHub actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 
+[Using Node.js with GitHub Actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-nodejs-with-github-actions)
+
 ## Alternatives
 
 There are a number of different options:
