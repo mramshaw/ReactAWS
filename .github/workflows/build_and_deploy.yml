@@ -12,14 +12,25 @@ jobs:
         node-version: [8.x, 10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v1
+    - uses: actions/cache@v1
       with:
-        ref: refs/heads/master
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and deploy
+    - name: npm install, test and build
+      with:
+        node-version: ${{ matrix.node-version }}
+      run: |
+        cd minimal-react
+        npm install
+        npm run build
+    - name: build and deploy
+      with:
+        node-version: 12.x
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -27,5 +38,5 @@ jobs:
         cd minimal-react
         npm install
         npm run build
-        cd build
+        cd minimal-react/build
         aws s3 cp --recursive --acl public-read --region ca-central-1 . s3://react-aws-github-integration-test

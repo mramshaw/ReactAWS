@@ -1,6 +1,10 @@
 # ReactAWS
 
+![https://github.com/mramshaw/ReactAWS/workflows/build_and_deploy/badge.svg](https://github.com/mramshaw/ReactAWS/workflows/build_and_deploy/badge.svg)
+
 A quick test of using GitHub actions for a CI build and deploy of a React app to AWS S3
+
+In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.amazonaws.com
 
 ## Prerequisites
 
@@ -45,6 +49,11 @@ There are a number of different options:
 
 ## To Do
 
-* [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
-* [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
-* [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
+- [x] Add GitHub actions build badge
+- [ ] Add linting
+- [ ] Add some React tests (also to CI workflow)
+- [ ] Configure AWS S3 and IAM for deploying react components after the build
+- [x] [Cache dependencies](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
+- [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
+- [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
+- [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
