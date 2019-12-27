@@ -1,6 +1,6 @@
 # ReactAWS
 
-![https://github.com/mramshaw/ReactAWS/workflows/build_and_deploy/badge.svg](https://github.com/mramshaw/ReactAWS/workflows/build_and_deploy/badge.svg)
+![https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg](https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg)
 
 A quick test of using GitHub actions for a CI build and deploy of a React app to AWS S3
 
@@ -37,6 +37,14 @@ This should make the app available at : http://localhost:3000/
 In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.amazonaws.com
 
 ## Reference
+
+Some useful references follow.
+
+#### GitHub Actions
+
+These seem to be the new kid on the block in terms of Jenkins/CircleCI/TravisCI/GitLab CI integrations.
+
+But good examples (and even documentation) seem to be scarce. GitLab has a good linter for their YAML files!
 
 [GitHub actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 
