@@ -1,9 +1,8 @@
-name: CI
+name: Node.js CI
 
 on: [push]
 
 jobs:
-
   build:
 
     runs-on: ubuntu-latest
@@ -14,37 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/cache@v1
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-      run: |
-        cd minimal-react
-        npm install
-        npm run build
-
-  deploy:
-
-    needs: build
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: deploy
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      run: |
-        cd minimal-react
-        npm install
-        npm run build
-        cd minimal-react/build
-        aws s3 cp --recursive --acl public-read --region ca-central-1 . s3://react-aws-github-integration-test
+    - run: cd minimal-react
+    - run: npm install
+    - run: npm run build
