@@ -55,7 +55,7 @@ seems to be slightly different.
 
 These seem to be the new kid on the block in terms of Jenkins/CircleCI/TravisCI/GitLab CI integrations.
 
-But good examples (and even documentation) seem to be scarce. GitLab has a good linter for their YAML files!
+But good examples (and even documentation) seem to be scarce. ___GitLab___ has a good linter for their YAML files!
 
 [GitHub actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 
