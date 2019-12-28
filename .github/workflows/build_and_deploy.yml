@@ -13,10 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/cache@v1
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -34,10 +30,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/cache@v1
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
     - name: deploy
       uses: actions/setup-node@v1
       with:
@@ -49,5 +41,5 @@ jobs:
         cd minimal-react
         npm install
         npm run build
-        cd minimal-react/build
+        cd build
         aws s3 cp --recursive --acl public-read --region ca-central-1 . s3://react-aws-github-integration-test

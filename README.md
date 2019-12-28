@@ -40,6 +40,17 @@ In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.a
 
 Some useful references follow.
 
+#### Create React App
+
+In order to properly twelve-factor our app, we will need to use environment variables.
+
+[Adding Custom Environment Variables](http://create-react-app.dev/docs/adding-custom-environment-variables/)
+
+__TL;DR__ Define application variables in a __.env__ file (which may be checked-in) and environment variables
+in __.env.local__ (which can also be checked-in) as well as in __.env.staging__ or __.env.prod__ (which should
+NOT be checked-in). The normal practice is to define production variables in __.env__ but the React.js workflow
+seems to be slightly different.
+
 #### GitHub Actions
 
 These seem to be the new kid on the block in terms of Jenkins/CircleCI/TravisCI/GitLab CI integrations.
@@ -49,6 +60,10 @@ But good examples (and even documentation) seem to be scarce. GitLab has a good 
 [GitHub actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 
 [Using Node.js with GitHub Actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-nodejs-with-github-actions)
+
+[Cacheing dependencies](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
+
+[Cacheing of dependencies removed as it did not seem to be working.]
 
 ## Alternatives
 
@@ -62,8 +77,9 @@ There are a number of different options:
 - [x] Add GitHub actions build badge
 - [ ] Add linting
 - [ ] Add some React tests (also to CI workflow)
+- [x] Twelve-factor our build and CI
 - [ ] Configure AWS S3 and IAM for deploying react components after the build
-- [x] [Cache dependencies](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
+- [x] Research Cacheing dependencies
 - [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
 - [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
 - [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
