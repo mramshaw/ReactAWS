@@ -47,9 +47,9 @@ In order to properly twelve-factor our app, we will need to use environment vari
 [Adding Custom Environment Variables](http://create-react-app.dev/docs/adding-custom-environment-variables/)
 
 __TL;DR__ Define application variables in a __.env__ file (which may be checked-in) and environment variables
-in __.env.local__ (which can also be checked-in) as well as in __.env.staging__ or __.env.prod__ (which should
-NOT be checked-in). The normal practice is to define production variables in __.env__ but the React.js workflow
-seems to be slightly different.
+in __.env.local__ (which can probably also be checked-in) as well as in __.env.staging__ or __.env.prod__ (which
+should definitely NOT be checked-in). The normal practice is to define production variables in __.env__ but the
+React.js workflow seems to be slightly different.
 
 #### GitHub Actions
 
@@ -78,7 +78,7 @@ There are a number of different options:
 - [ ] Add linting
 - [ ] Add some React tests (also to CI workflow)
 - [x] Twelve-factor our build and CI
-- [ ] Configure AWS S3 and IAM for deploying react components after the build
+- [x] Configure AWS IAM for deploying react components to S3 after the build
 - [x] Research Cacheing dependencies
 - [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
 - [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
