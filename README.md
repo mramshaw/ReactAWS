@@ -76,6 +76,7 @@ There are a number of different options:
 
 - [x] Add GitHub actions build badge
 - [ ] Add linting
+- [x] Add [prettier](htts://prettier.io/) code formatting
 - [ ] Add some React tests (also to CI workflow)
 - [x] Twelve-factor our build and CI
 - [x] Configure AWS IAM for deploying react components to S3 after the build
