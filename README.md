@@ -1,6 +1,6 @@
 # ReactAWS
 
-![https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg](https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg)
+![Build status](https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg)
 
 A quick test of using GitHub actions for a CI build and deploy of a React app to AWS S3
 
