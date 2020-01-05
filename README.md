@@ -42,7 +42,7 @@ Some useful references follow.
 
 #### Create React App
 
-In order to properly twelve-factor our app, we will need to use environment variables.
+In order to properly [twelve-factor](http://12factor.net/) our app, we will need to use environment variables.
 
 [Adding Custom Environment Variables](http://create-react-app.dev/docs/adding-custom-environment-variables/)
 
@@ -78,7 +78,7 @@ There are a number of different options:
 - [ ] Add linting
 - [x] Add [prettier](htts://prettier.io/) code formatting
 - [ ] Add some React tests (also to CI workflow)
-- [x] Twelve-factor our build and CI
+- [x] [Twelve-factor](http://12factor.net/) our build and CI
 - [x] Configure AWS IAM for deploying react components to S3 after the build
 - [x] Research Cacheing dependencies
 - [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
