@@ -36,6 +36,17 @@ This should make the app available at : http://localhost:3000/
 
 In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.amazonaws.com
 
+## Routing
+
+In order to test AWS S3 wwebsite hosting, we will create some stub pages.
+
+1. Login (Home) page
+2. Sign Up page 
+3. Forgot Password page
+4. Does not exist (404) page
+
+Test the 404 page: http://react-aws-github-integration-test.s3-website.ca-central-1.amazonaws.com/does-not-exist
+
 ## Reference
 
 Some useful references follow.
@@ -78,6 +89,7 @@ There are a number of different options:
 - [ ] Add linting
 - [x] Add [prettier](htts://prettier.io/) code formatting
 - [x] Add some routes so we can try out routing on AWS S3
+- [ ] Add logging-in processing (currently, all `submit` buttons do not do anything)
 - [ ] Add some React tests (also to CI workflow)
 - [x] [Twelve-factor](http://12factor.net/) our build and CI
 - [x] Configure AWS IAM for deploying react components to S3 after the build
