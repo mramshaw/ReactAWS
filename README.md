@@ -38,7 +38,7 @@ In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.a
 
 ## Routing
 
-In order to test AWS S3 wwebsite hosting, we will create some stub pages.
+In order to test AWS S3 website hosting, we will create some stub pages.
 
 1. Login (Home) page
 2. Sign Up page 
@@ -78,10 +78,17 @@ But good examples (and even documentation) seem to be scarce. ___GitLab___ has a
 
 ## Alternatives
 
-There are a number of different options:
+There are a number of different options, both for CI/CD and for deployment targets.
+
+#### CI/CD
 
 * [AWS Amplify](http://aws.amazon.com/amplify/)
 * [Buddy](http://buddy.works/)
+
+#### Deployment
+
+* [GitHub Pages](http://pages.github.com/)
+* [Netlify](http://www.netlify.com/)
 
 ## To Do
 
