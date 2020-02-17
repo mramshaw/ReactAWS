@@ -97,14 +97,22 @@ Depending upon your deployment requirements, any of the following may be an opti
 
 [They all seem to offer various free options.]
 
-Heroku is owned by Salesforce.com and offers a number of attractive services. It uses
+__GitHub Pages__ are pretty straightforward.
+
+__Heroku__ is owned by Salesforce.com and offers a number of attractive services. It uses
 containers, which are referred to as `dynos`.
 
 For more on `dynos`: http://www.heroku.com/dynos
 
-Surge appears to be for __static__ websites only, so perhaps not suitable for React.
+Deploying to Heroku can be a little bit complicated.
 
-About ZEIT:
+Check out this app on Heroku: https://react-aws.herokuapp.com/
+
+__Netlify__ is very easy to use, so a pretty good option.
+
+__Surge__ appears to be for __static__ websites only, so perhaps not suitable for React.
+
+__Zeit__
 
 > ZEIT Now is a cloud platform for static frontends and serverless functions.
 > It enables developers to host websites and web applications that deploy
