@@ -90,7 +90,7 @@ There are a number of different options, both for CI/CD and for deployment targe
 Depending upon your deployment requirements, any of the following may be an option:
 
 * [GitHub Pages](http://pages.github.com/)
-* [Heroku](http://www.heroku.com/) (Heroku is owned by Salesforce.com)
+* [Heroku](http://www.heroku.com/)
 * [Netlify](http://www.netlify.com/)
 * [Surge](http://surge.sh/)
 * [Zeit](http://zeit.co/)
@@ -109,6 +109,8 @@ Deploying to Heroku can be a little bit complicated.
 Check out this app on Heroku: https://react-aws.herokuapp.com/
 
 __Netlify__ is very easy to use, so a pretty good option.
+
+Check out this app on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
 
 __Surge__ appears to be for __static__ websites only, so perhaps not suitable for React.
 
