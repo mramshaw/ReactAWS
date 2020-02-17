@@ -87,8 +87,30 @@ There are a number of different options, both for CI/CD and for deployment targe
 
 #### Deployment
 
+Depending upon your deployment requirements, any of the following may be an option:
+
 * [GitHub Pages](http://pages.github.com/)
+* [Heroku](http://www.heroku.com/) (Heroku is owned by Salesforce.com)
 * [Netlify](http://www.netlify.com/)
+* [Surge](http://surge.sh/)
+* [Zeit](http://zeit.co/)
+
+[They all seem to offer various free options.]
+
+Heroku is owned by Salesforce.com and offers a number of attractive services. It uses
+containers, which are referred to as `dynos`.
+
+For more on `dynos`: http://www.heroku.com/dynos
+
+Surge appears to be for __static__ websites only, so perhaps not suitable for React.
+
+About ZEIT:
+
+> ZEIT Now is a cloud platform for static frontends and serverless functions.
+> It enables developers to host websites and web applications that deploy
+> instantly, scale automatically, and require no supervision.
+
+From: http://github.com/zeit/now/tree/master/examples
 
 ## To Do
 
@@ -104,3 +126,4 @@ There are a number of different options, both for CI/CD and for deployment targe
 - [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
 - [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
 - [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
+- [x] Add more notes on cloud deployment options
