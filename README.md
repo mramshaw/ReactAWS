@@ -99,8 +99,9 @@ Depending upon your deployment requirements, any of the following may be an opti
 
 __GitHub Pages__ are pretty straightforward.
 
-__Heroku__ is owned by Salesforce.com and offers a number of attractive services. It uses
-containers, which are referred to as `dynos`.
+__Heroku__ is owned by Salesforce.com and offers a number of attractive services.
+
+It uses containers, which are referred to as `dynos`.
 
 For more on `dynos`: http://www.heroku.com/dynos
 
@@ -137,3 +138,4 @@ From: http://github.com/zeit/now/tree/master/examples
 - [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
 - [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
 - [x] Add more notes on cloud deployment options
+- [x] Run 'npm audit fix' to fix some issues
