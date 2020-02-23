@@ -89,15 +89,35 @@ There are a number of different options, both for CI/CD and for deployment targe
 
 Depending upon your deployment requirements, any of the following may be an option:
 
+* [Bitbucket Cloud](http://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html)
+* [Firebase](http://firebase.google.com/)
 * [GitHub Pages](http://pages.github.com/)
+* [GitLab Pages](http://docs.gitlab.com/ee/user/project/pages/)
 * [Heroku](http://www.heroku.com/)
 * [Netlify](http://www.netlify.com/)
+* [Render](http://render.com/)
 * [Surge](http://surge.sh/)
 * [Zeit](http://zeit.co/)
 
-[They all seem to offer various free options.]
+[They all seem to offer various free options. Most will require installing a CLI tool.]
+
+__Bitbucket Cloud__ is a Bitbucket option (Bitbucket is one of the Atlassian companies).
+
+Like both GitHub and GitLab, Bitbucket has a deployment option.
+
+__Firebase__ was acquired by Google in 2014.
+
+Features [React Firebase](http://react-firebase-js.com/).
+
+> Firebase helps mobile and web app teams succeed
+
+From: http://firebase.google.com/
+
+Definitely worth a look for ___Mobile___, known for authentication and Crashlytics.
 
 __GitHub Pages__ are pretty straightforward.
+
+__GitLab Pages__ seem to be pretty much the same thing as __GitHub Pages__, but for ___GitLab___ of course.
 
 __Heroku__ is owned by Salesforce.com and offers a number of attractive services.
 
@@ -113,9 +133,24 @@ __Netlify__ is very easy to use, so a pretty good option.
 
 Check out this app on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
 
+__Render__ seems to be an interesting alternative to __Heroku__, probably worth investigating.
+
+Note that Render can integrate with either a GitHub repo or a GitLab repo.
+
+These appear to be the only deployment options available (for now?).
+
+Apart from the GitHub / GitLab root repo proviso, seems like a nice service.
+
 __Surge__ appears to be for __static__ websites only, so perhaps not suitable for React.
 
+> Surge has been built from the ground up for [native web application](https://blog.andyet.com/2015/01/22/native-web-apps)
+> publishing and is committed to being the best way for Front-End Developers to put HTML5 applications into production.
+
+From: http://surge.sh/help/getting-started-with-surge
+
 __Zeit__
+
+[Sometimes referred as simply __Now__.]
 
 > ZEIT Now is a cloud platform for static frontends and serverless functions.
 > It enables developers to host websites and web applications that deploy
