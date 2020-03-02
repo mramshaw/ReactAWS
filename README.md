@@ -96,6 +96,7 @@ Depending upon your deployment requirements, any of the following may be an opti
 * [Heroku](http://www.heroku.com/)
 * [Netlify](http://www.netlify.com/)
 * [Render](http://render.com/)
+* [Stackbit](http://www.stackbit.com/)
 * [Surge](http://surge.sh/)
 * [Zeit](http://zeit.co/)
 
@@ -133,6 +134,36 @@ __Netlify__ is very easy to use, so a pretty good option.
 
 Check out this app on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
 
+Of course, Netlify are known for defining [Jamstack](http://en.wikipedia.org/wiki/Netlify#Jamstack) (formerly JAMstack).
+
+Mathias Biilmann (CEO & Co-founder of Netlify):
+
+> A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup
+
+[The JAM in Jamstack stands for Javascript, APIs, and Markup. So ... somewhat more than a __static__ website.]
+
+>  It’s a new way of building websites and apps that delivers better performance, higher security,
+> lower cost of scaling, and a better developer experience.
+
+From: http://jamstack.org/
+
+Not surprisingly, Netlify is really optimal for __Jamstack__ deployments.
+
+Check out Jamstack examples here: http://jamstack.org/examples/
+
+[Incidentally, Jamstack sites are considered by AWS to be
+[well-architected](http://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/).]
+
+To achieve optimal efficiency and cost reduction, Jamstack sites require a __CDN__.
+
+Jamstack sites are __serverless__:
+
+> The thing that they all have in common is that they don’t depend on a web server.
+
+From: http://jamstack.org/
+
+While Jamstack sites are effectively serverless, Jamstack itself is not considered to be __serverless__.
+
 __Render__ seems to be an interesting alternative to __Heroku__, probably worth investigating.
 
 Note that Render can integrate with either a GitHub repo or a GitLab repo.
@@ -141,7 +172,25 @@ These appear to be the only deployment options available (for now?).
 
 Apart from the GitHub / GitLab root repo proviso, seems like a nice service.
 
+Check out this [Vue.js](http://vuejs.org/) scaffold that I deployed to Render: http://vuerender.onrender.com
+
+__Stackbit__ describe themselves as:
+
+> THE BEST WAY TO JAMSTACK
+
+[I am including them here for completeness, but they are probably only for __Jamstack__ deployments.]
+
 __Surge__ appears to be for __static__ websites only, so perhaps not suitable for React.
+
+Surge describes themselves as:
+
+> Static web publishing for Front-End Developers
+
+From: http://surge.sh/
+
+[Note the __Static__ part.]
+
+And:
 
 > Surge has been built from the ground up for [native web application](https://blog.andyet.com/2015/01/22/native-web-apps)
 > publishing and is committed to being the best way for Front-End Developers to put HTML5 applications into production.
