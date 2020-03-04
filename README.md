@@ -87,6 +87,12 @@ There are a number of different options, both for CI/CD and for deployment targe
 
 #### Deployment
 
+There are a number of deployment options (in addiition to Amazon S3). Some options follow.
+
+Check out this app deployed on Heroku: https://react-aws.herokuapp.com/
+
+Check out this app deployed on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
+
 For an extensive list of cloud deployment options, please check out my [Meatballs](http://github.com/mramshaw/Meatballs) repo.
 
 ## To Do
