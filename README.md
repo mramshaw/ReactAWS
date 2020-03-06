@@ -2,7 +2,7 @@
 
 ![https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg](https://github.com/mramshaw/ReactAWS/workflows/CI/badge.svg)
 
-A quick test of using GitHub actions for a CI build and deploy of a React app to AWS S3
+A quick test of using GitHub actions for a CI build and deploy of a React scaffold to AWS S3
 
 In this case: http://react-aws-github-integration-test.s3-website.ca-central-1.amazonaws.com
 
@@ -87,13 +87,14 @@ There are a number of different options, both for CI/CD and for deployment targe
 
 #### Deployment
 
-There are a number of deployment options (in addiition to Amazon S3). Some options follow.
+There are a number of deployment options (in addition to Amazon S3). Some React deployments follow.
 
-Check out this app deployed on Heroku: https://react-aws.herokuapp.com/
+Check out this scaffold deployed on Heroku: https://react-aws.herokuapp.com/
 
-Check out this app deployed on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
+Check out this scaffold deployed on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
 
-For an extensive list of cloud deployment options, please check out my [Meatballs](http://github.com/mramshaw/Meatballs) repo.
+For an extensive list of cloud deployment options (including some [Vue.js](http://vuejs.org/) deployments)
+please check out my [Meatballs](http://github.com/mramshaw/Meatballs) repo.
 
 ## To Do
 
