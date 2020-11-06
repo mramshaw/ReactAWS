@@ -68,13 +68,15 @@ These seem to be the new kid on the block in terms of Jenkins/CircleCI/TravisCI/
 
 But good examples (and even documentation) seem to be scarce. ___GitLab___ has a good linter for their YAML files!
 
+[For an example of using GitHub Actions with __vue.js__, check out my [VueRender](http://github.com/mramshaw/VueRender) repo.]
+
 [GitHub actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 
 [Using Node.js with GitHub Actions](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-nodejs-with-github-actions)
 
-[Cacheing dependencies](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
+[Caching dependencies](http://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
 
-[Cacheing of dependencies removed as it did not seem to be working.]
+[Caching of dependencies removed as it did not seem to be working.]
 
 ## Alternatives
 
@@ -106,7 +108,7 @@ please check out my [Meatballs](http://github.com/mramshaw/Meatballs) repo.
 - [ ] Add some React tests (also to CI workflow)
 - [x] [Twelve-factor](http://12factor.net/) our build and CI
 - [x] Configure AWS IAM for deploying react components to S3 after the build
-- [x] Research Cacheing dependencies
+- [x] Research Caching dependencies
 - [ ] [Amazon Route 53](http://aws.amazon.com/route53/) for domain registration
 - [ ] [Amazon CloudFront](http://aws.amazon.com/cloudfront/) for content distribution (CDN)
 - [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
