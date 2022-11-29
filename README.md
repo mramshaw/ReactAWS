@@ -89,9 +89,7 @@ There are a number of different options, both for CI/CD and for deployment targe
 
 #### Deployment
 
-There are a number of deployment options (in addition to Amazon S3). Some React deployments follow.
-
-Check out this scaffold deployed on Heroku: https://react-aws.herokuapp.com/
+There are a number of deployment options (in addition to Amazon S3).
 
 Check out this scaffold deployed on Netlify: https://compassionate-sinoussi-40e0e0.netlify.com/
 
@@ -114,4 +112,5 @@ please check out my [Meatballs](http://github.com/mramshaw/Meatballs) repo.
 - [ ] [AWS Certificate Manager](http://aws.amazon.com/certificate-manager/) for certification
 - [x] Add more notes on cloud deployment options
 - [x] Move cloud deployment options to a new [Meatballs](http://github.com/mramshaw/Meatballs) repo
+- [x] Remove link to deleted Heroku deployment (Heroku is no longer free)
 - [x] Run 'npm audit fix' to fix some issues
